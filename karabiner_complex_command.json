@@ -1,0 +1,21 @@
+{
+    "description": "CMD + Q trigger SafeQuitSafari script if in focus",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "osascript ~/Projects/SafariSafeQuit/safe_quit_safari_if_focus.scpt"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
