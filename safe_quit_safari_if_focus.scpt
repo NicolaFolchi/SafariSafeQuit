@@ -18,17 +18,17 @@ if frontmost of application "Safari" then
 		else
 			set _msg to _msg & _tab_count & " tabs." as string
 		end if
-		
+	  activate	
 		display alert ¬
 			"Are you sure you want to quit Safari?" message _msg ¬
-			buttons {"Quit", "Cancel"} ¬
+			buttons {"Quit", "Cancel"} default button "Quit" cancel button "Cancel" ¬
 			giving up after 60
 		if button returned of result is "Quit" then quit
 	end tell
 else
-	set {name:n, name extension:e} to (info for (path to frontmost application)) 
-    set appName to n's text 1 thru ((my (offset of ("." & e) in n)) - 1)
-    tell application appName
-        quit
-    end tell
+	set {name:n, name extension:e} to (info for (path to frontmost application))
+	set appName to n's text 1 thru ((my (offset of ("." & e) in n)) - 1)
+	tell application appName
+		quit
+	end tell
 end if
