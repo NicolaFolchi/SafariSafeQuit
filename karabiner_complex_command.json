@@ -16,6 +16,22 @@
                 }
             ],
             "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": [
+                        "right_command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "osascript ~/Projects/SafariSafeQuit/safe_quit_safari_if_focus.scpt"
+                }
+            ],
+            "type": "basic"
         }
     ]
 }
