@@ -1,5 +1,5 @@
 # Safari Safe Quit
-After finding myself accidentally quitting Safari with the Command + Q shortcut and having to reset my windows and pages, I decided to create a simple solution using Karabiner. Now, Safari will warn the user before quitting.
+After finding myself accidentally quitting Safari with the Command + Q shortcut all the time and having to reset my windows and pages, I decided to create a simple solution using Karabiner. Now, Safari will warn the user before quitting.
 
 
 ## How to run
